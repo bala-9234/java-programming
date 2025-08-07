@@ -2,11 +2,29 @@ import java.io.*;
 import java.util.*;
 import java.text.*;
 import java.math.*;
-import java.util.regex.*;
+import java.util.regex.*;import java.util.Scanner;
 
-public class Solution {
-
+public class MathFunctions {
     public static void main(String[] args) {
-        Scanner sc = 
+        Scanner sc = new Scanner(System.in);
+
+       
+        double floatVal = sc.nextDouble();  
+        int sqrtInput = sc.nextInt();       
+        int base = sc.nextInt();            
+        int power = sc.nextInt();          
+
+       
+        int floorVal = (int) Math.floor(floatVal);
+        int ceilVal = (int) Math.ceil(floatVal);
+        int sqrtVal = (int) Math.sqrt(sqrtInput);
+        int powVal = (int) Math.pow(base, power);
+
+        
+        System.out.println(floorVal);
+        System.out.println(ceilVal);
+        System.out.println(sqrtVal);
+        System.out.println(powVal);
     }
 }
+
